@@ -1,1 +1,363 @@
-{"repositories":[{"name":"newdarwindev/dots-workflow-refinery-demo","visibility":"public","source_url":"https://github.com/newdarwindev/dots-workflow-refinery-demo","deployment_url":"https://newdarwindev.github.io/dots-workflow-refinery-demo/","latest_workflow":{"conclusion":null,"observed_at":null}}]}
+{
+  "repositories": [
+    {
+      "name": "newdarwindev/brick-mosaic-studio",
+      "visibility": "public",
+      "source_url": "https://github.com/newdarwindev/brick-mosaic-studio",
+      "description": "Original local image-to-brick mosaic studio with downloadable instructions and parts lists",
+      "updated_at": "2026-10-29T11:39:06Z",
+      "deployment_url": "https://newdarwindev.github.io/brick-mosaic-studio/",
+      "pages_status": null,
+      "http_status": 200,
+      "latest_deployment": {
+        "state": "success",
+        "updated_at": "2026-10-29T11:40:03Z"
+      },
+      "latest_workflow": {
+        "conclusion": "success",
+        "status": "completed",
+        "url": "https://github.com/newdarwindev/brick-mosaic-studio/actions/runs/40867018545",
+        "updated_at": "2026-10-29T11:40:02Z"
+      },
+      "observed_at": "2026-10-31T22:29:05.338696+00:00"
+    },
+    {
+      "name": "newdarwindev/cloud-onboarding-demo",
+      "visibility": "public",
+      "source_url": "https://github.com/newdarwindev/cloud-onboarding-demo",
+      "description": "Synthetic-only cloud onboarding handoff starter with explicit human approval gates and offline validation",
+      "updated_at": "2026-10-29T14:23:53Z",
+      "deployment_url": null,
+      "pages_status": null,
+      "http_status": null,
+      "latest_deployment": {
+        "state": null,
+        "updated_at": null
+      },
+      "latest_workflow": {
+        "conclusion": "success",
+        "status": "completed",
+        "url": "https://github.com/newdarwindev/cloud-onboarding-demo/actions/runs/40891047672",
+        "updated_at": "2026-10-29T14:24:02Z"
+      },
+      "observed_at": "2026-10-31T22:29:05.338696+00:00"
+    },
+    {
+      "name": "newdarwindev/dot-status-demo",
+      "visibility": "public",
+      "source_url": "https://github.com/newdarwindev/dot-status-demo",
+      "description": "Synthetic dot agent status dashboard \u2014 no live machine metrics or connected accounts; strict quality checks and recorded desktop/mobile tests.",
+      "updated_at": "2026-10-29T13:44:26Z",
+      "deployment_url": "https://newdarwindev.github.io/dot-status-demo/",
+      "pages_status": null,
+      "http_status": 200,
+      "latest_deployment": {
+        "state": "success",
+        "updated_at": "2026-10-29T13:45:22Z"
+      },
+      "latest_workflow": {
+        "conclusion": "success",
+        "status": "completed",
+        "url": "https://github.com/newdarwindev/dot-status-demo/actions/runs/40884699322",
+        "updated_at": "2026-10-29T13:45:22Z"
+      },
+      "observed_at": "2026-10-31T22:29:05.338696+00:00"
+    },
+    {
+      "name": "newdarwindev/dots-authorized-agent-workflows-paper",
+      "visibility": "public",
+      "source_url": "https://github.com/newdarwindev/dots-authorized-agent-workflows-paper",
+      "description": "Technical position paper and Beamer briefing on authorized agent workflows",
+      "updated_at": "2026-10-31T21:56:24Z",
+      "deployment_url": "https://newdarwindev.github.io/dots-authorized-agent-workflows-paper/",
+      "pages_status": null,
+      "http_status": 200,
+      "latest_deployment": {
+        "state": "success",
+        "updated_at": "2026-10-31T21:58:39Z"
+      },
+      "latest_workflow": {
+        "conclusion": "success",
+        "status": "completed",
+        "url": "https://github.com/newdarwindev/dots-authorized-agent-workflows-paper/actions/runs/41245888787",
+        "updated_at": "2026-10-31T21:58:39Z"
+      },
+      "observed_at": "2026-10-31T22:29:05.338696+00:00"
+    },
+    {
+      "name": "newdarwindev/dots-browser-workflows-docs",
+      "visibility": "public",
+      "source_url": "https://github.com/newdarwindev/dots-browser-workflows-docs",
+      "description": "Public architecture and status for Dots Browser Workflows",
+      "updated_at": "2026-10-31T22:19:26Z",
+      "deployment_url": "https://newdarwindev.github.io/dots-browser-workflows-docs/",
+      "pages_status": null,
+      "http_status": 200,
+      "latest_deployment": {
+        "state": "success",
+        "updated_at": "2026-10-31T22:20:04Z"
+      },
+      "latest_workflow": {
+        "conclusion": "success",
+        "status": "completed",
+        "url": "https://github.com/newdarwindev/dots-browser-workflows-docs/actions/runs/41247655903",
+        "updated_at": "2026-10-31T22:20:04Z"
+      },
+      "observed_at": "2026-10-31T22:29:05.338696+00:00"
+    },
+    {
+      "name": "newdarwindev/dots-dspy-refinery-architecture",
+      "visibility": "public",
+      "source_url": "https://github.com/newdarwindev/dots-dspy-refinery-architecture",
+      "description": "Draft architecture for a protected DSPy experiment refinery \u00b7 source reaction \ud83d\udc4d1",
+      "updated_at": "2026-10-31T17:51:36Z",
+      "deployment_url": null,
+      "pages_status": null,
+      "http_status": null,
+      "latest_deployment": {
+        "state": null,
+        "updated_at": null
+      },
+      "latest_workflow": {
+        "conclusion": null,
+        "status": null,
+        "url": null,
+        "updated_at": null
+      },
+      "observed_at": "2026-10-31T22:29:05.338696+00:00"
+    },
+    {
+      "name": "newdarwindev/dots-local-sidecar-cloud-infrastructure",
+      "visibility": "public",
+      "source_url": "https://github.com/newdarwindev/dots-local-sidecar-cloud-infrastructure",
+      "description": "Draft architecture for an agent-operated local and multicloud sidecar platform | source reactions: \ud83d\udcbb 2",
+      "updated_at": "2026-10-31T17:51:35Z",
+      "deployment_url": null,
+      "pages_status": null,
+      "http_status": null,
+      "latest_deployment": {
+        "state": null,
+        "updated_at": null
+      },
+      "latest_workflow": {
+        "conclusion": null,
+        "status": null,
+        "url": null,
+        "updated_at": null
+      },
+      "observed_at": "2026-10-31T22:29:05.338696+00:00"
+    },
+    {
+      "name": "newdarwindev/dots-prompt-tracker-public",
+      "visibility": "public",
+      "source_url": "https://github.com/newdarwindev/dots-prompt-tracker-public",
+      "description": "Synthetic public prompt progress demo; source Slack reaction: none.",
+      "updated_at": "2026-10-31T18:14:06Z",
+      "deployment_url": "https://newdarwindev.github.io/dots-prompt-tracker-public/",
+      "pages_status": null,
+      "http_status": 200,
+      "latest_deployment": {
+        "state": null,
+        "updated_at": null
+      },
+      "latest_workflow": {
+        "conclusion": "success",
+        "status": "completed",
+        "url": "https://github.com/newdarwindev/dots-prompt-tracker-public/actions/runs/41228419189",
+        "updated_at": "2026-10-31T18:15:10Z"
+      },
+      "observed_at": "2026-10-31T22:29:05.338696+00:00"
+    },
+    {
+      "name": "newdarwindev/dots-repo-sitemap-public",
+      "visibility": "public",
+      "source_url": "https://github.com/newdarwindev/dots-repo-sitemap-public",
+      "description": "Public repository sitemap and Actions status; source Slack reaction: no reaction on owner request.",
+      "updated_at": "2026-10-31T18:13:55Z",
+      "deployment_url": "https://newdarwindev.github.io/dots-repo-sitemap-public/",
+      "pages_status": null,
+      "http_status": 200,
+      "latest_deployment": {
+        "state": null,
+        "updated_at": null
+      },
+      "latest_workflow": {
+        "conclusion": "success",
+        "status": "completed",
+        "url": "https://github.com/newdarwindev/dots-repo-sitemap-public/actions/runs/41228413926",
+        "updated_at": "2026-10-31T18:14:52Z"
+      },
+      "observed_at": "2026-10-31T22:29:05.338696+00:00"
+    },
+    {
+      "name": "newdarwindev/dots-slackdump-status",
+      "visibility": "public",
+      "source_url": "https://github.com/newdarwindev/dots-slackdump-status",
+      "description": "Public aggregate status for private encrypted Slack backups",
+      "updated_at": "2026-10-31T21:09:39Z",
+      "deployment_url": "https://newdarwindev.github.io/dots-slackdump-status/",
+      "pages_status": "built",
+      "http_status": 200,
+      "latest_deployment": {
+        "state": "success",
+        "updated_at": "2026-10-31T21:10:02Z"
+      },
+      "latest_workflow": {
+        "conclusion": "success",
+        "status": "completed",
+        "url": "https://github.com/newdarwindev/dots-slackdump-status/actions/runs/41242263707",
+        "updated_at": "2026-10-31T21:10:02Z"
+      },
+      "observed_at": "2026-10-31T22:29:05.338696+00:00"
+    },
+    {
+      "name": "newdarwindev/dots-workflow-refinery-demo",
+      "visibility": "public",
+      "source_url": "https://github.com/newdarwindev/dots-workflow-refinery-demo",
+      "description": "Synthetic opt-in workflow refinery concept demo with React, Storybook, and UI tests \u00b7 Source reactions: \u2764\ufe0f1 \ud83d\udcaf1 \ud83e\udd111 \ud83e\uddd1\u200d\ud83d\udd2c1 \ud83d\udc4d1",
+      "updated_at": "2026-10-31T19:04:52Z",
+      "deployment_url": "https://newdarwindev.github.io/dots-workflow-refinery-demo/",
+      "pages_status": null,
+      "http_status": 200,
+      "latest_deployment": {
+        "state": "success",
+        "updated_at": "2026-10-31T19:05:50Z"
+      },
+      "latest_workflow": {
+        "conclusion": "success",
+        "status": "completed",
+        "url": "https://github.com/newdarwindev/dots-workflow-refinery-demo/actions/runs/41232484837",
+        "updated_at": "2026-10-31T19:05:49Z"
+      },
+      "observed_at": "2026-10-31T22:29:05.338696+00:00"
+    },
+    {
+      "name": "newdarwindev/emacs-kiosk-demo",
+      "visibility": "public",
+      "source_url": "https://github.com/newdarwindev/emacs-kiosk-demo",
+      "description": "Credential-free Alpine Emacs kiosk ISO with real QEMU boot and keyboard/OCR evidence",
+      "updated_at": "2026-10-29T17:50:58Z",
+      "deployment_url": null,
+      "pages_status": null,
+      "http_status": null,
+      "latest_deployment": {
+        "state": null,
+        "updated_at": null
+      },
+      "latest_workflow": {
+        "conclusion": "success",
+        "status": "completed",
+        "url": "https://github.com/newdarwindev/emacs-kiosk-demo/actions/runs/40925221697",
+        "updated_at": "2026-10-29T17:58:00Z"
+      },
+      "observed_at": "2026-10-31T22:29:05.338696+00:00"
+    },
+    {
+      "name": "newdarwindev/fibonacci-visualizer",
+      "visibility": "public",
+      "source_url": "https://github.com/newdarwindev/fibonacci-visualizer",
+      "description": "A dependency-free, single-file Fibonacci sequence visualizer",
+      "updated_at": "2026-10-29T10:55:37Z",
+      "deployment_url": null,
+      "pages_status": null,
+      "http_status": null,
+      "latest_deployment": {
+        "state": null,
+        "updated_at": null
+      },
+      "latest_workflow": {
+        "conclusion": null,
+        "status": null,
+        "url": null,
+        "updated_at": null
+      },
+      "observed_at": "2026-10-31T22:29:05.338696+00:00"
+    },
+    {
+      "name": "newdarwindev/firm-payments-docs",
+      "visibility": "public",
+      "source_url": "https://github.com/newdarwindev/firm-payments-docs",
+      "description": "Assignment-to-evidence documentation for the private firm-payments implementation",
+      "updated_at": "2026-10-31T17:02:25Z",
+      "deployment_url": "https://newdarwindev.github.io/firm-payments-docs/",
+      "pages_status": null,
+      "http_status": 200,
+      "latest_deployment": {
+        "state": "success",
+        "updated_at": "2026-10-31T17:02:58Z"
+      },
+      "latest_workflow": {
+        "conclusion": "success",
+        "status": "completed",
+        "url": "https://github.com/newdarwindev/firm-payments-docs/actions/runs/41222544367",
+        "updated_at": "2026-10-31T17:02:58Z"
+      },
+      "observed_at": "2026-10-31T22:29:05.338696+00:00"
+    },
+    {
+      "name": "newdarwindev/JobIntelAI",
+      "visibility": "public",
+      "source_url": "https://github.com/newdarwindev/JobIntelAI",
+      "description": "Rag system for turning job postings into job application scenarios",
+      "updated_at": "2026-10-20T16:04:08Z",
+      "deployment_url": null,
+      "pages_status": null,
+      "http_status": null,
+      "latest_deployment": {
+        "state": null,
+        "updated_at": null
+      },
+      "latest_workflow": {
+        "conclusion": "success",
+        "status": "completed",
+        "url": "https://github.com/newdarwindev/JobIntelAI/actions/runs/41248028964",
+        "updated_at": "2026-10-31T22:24:43Z"
+      },
+      "observed_at": "2026-10-31T22:29:05.338696+00:00"
+    },
+    {
+      "name": "newdarwindev/public-demo-template",
+      "visibility": "public",
+      "source_url": "https://github.com/newdarwindev/public-demo-template",
+      "description": "Public demo starter: strict checks, recorded UI tests, and GitHub Pages.",
+      "updated_at": "2026-10-29T11:30:22Z",
+      "deployment_url": "https://newdarwindev.github.io/public-demo-template/",
+      "pages_status": null,
+      "http_status": 200,
+      "latest_deployment": {
+        "state": "success",
+        "updated_at": "2026-10-29T11:31:33Z"
+      },
+      "latest_workflow": {
+        "conclusion": "success",
+        "status": "completed",
+        "url": "https://github.com/newdarwindev/public-demo-template/actions/runs/40865894492",
+        "updated_at": "2026-10-29T11:31:33Z"
+      },
+      "observed_at": "2026-10-31T22:29:05.338696+00:00"
+    },
+    {
+      "name": "newdarwindev/storage-fleet-demo",
+      "visibility": "public",
+      "source_url": "https://github.com/newdarwindev/storage-fleet-demo",
+      "description": "Interactive eight-computer storage and simulated cleanup demo",
+      "updated_at": "2026-10-29T17:13:24Z",
+      "deployment_url": "https://newdarwindev.github.io/storage-fleet-demo/",
+      "pages_status": null,
+      "http_status": 200,
+      "latest_deployment": {
+        "state": "success",
+        "updated_at": "2026-10-29T11:01:38Z"
+      },
+      "latest_workflow": {
+        "conclusion": "failure",
+        "status": "completed",
+        "url": "https://github.com/newdarwindev/storage-fleet-demo/actions/runs/40919228752",
+        "updated_at": "2026-10-29T17:14:02Z"
+      },
+      "observed_at": "2026-10-31T22:29:05.338696+00:00"
+    }
+  ],
+  "refreshed_at": "2026-10-31T22:29:05.338696+00:00",
+  "count": 17
+}

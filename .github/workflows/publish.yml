@@ -23,6 +23,7 @@ jobs:
       - run: python refresh_public.py
         env:
           GITHUB_TOKEN: ${{ github.token }}
+      - run: python -m unittest discover -s tests
       - run: mkdir -p site && python generate.py inventory.json site/index.html --audience public
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
