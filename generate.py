@@ -34,16 +34,19 @@ def build(data, audience, now=None):
         run=r.get('latest_workflow') or {}
         conclusion=run.get('conclusion') or run.get('status') or 'unknown'
         observed=r.get('observed_at') or run.get('observed_at')
+        run_time=run.get('updated_at') or observed
         stale=True
         try:
-            stale=(now-datetime.fromisoformat(observed.replace('Z','+00:00'))).total_seconds()>86400
+            stale=(now-datetime.fromisoformat(run_time.replace('Z','+00:00'))).total_seconds()>86400
         except (ValueError,AttributeError,TypeError): pass
         if stale: conclusion='stale / unknown'
         if conclusion == 'success': passing+=1
         deployment=(r.get('latest_deployment') or {}).get('state') or 'unknown'
         signals=pill('CI',conclusion,'good' if conclusion=='success' else 'bad' if conclusion=='failure' else 'warn') + pill('Deploy',deployment,'good' if deployment=='success' else 'warn') + pill('HTTP',code if code is not None else 'unknown','good' if code==200 else 'bad' if isinstance(code,int) and code>=400 else 'warn')
         site_html=f'<a href="{site}">Open site ↗</a>' if site else 'No verified Pages URL'
-        cards.append(f'<article class="card" data-name="{esc(r["name"].lower())}"><div class="top"><a class="name" href="{source}">{esc(r["name"])}</a></div><p class="desc">{esc(r.get("description") or "Public source repository")}</p><div class="signals">{signals}</div><div class="meta"><span>{site_html}</span><span>Checked {esc(observed or "unknown")}</span></div></article>')
+        run_label=esc((run.get('updated_at') or 'unknown')[:16])
+        deployment_label=esc(((r.get('latest_deployment') or {}).get('updated_at') or 'unknown')[:16])
+        cards.append(f'<article class="card" data-name="{esc(r["name"].lower())}"><div class="top"><a class="name" href="{source}">{esc(r["name"])}</a></div><p class="desc">{esc(r.get("description") or "Public source repository")}</p><div class="signals">{signals}</div><div class="meta"><span>{site_html}</span><span>CI {run_label} · Deploy {deployment_label} · Checked {esc((observed or 'unknown')[:16])}</span></div></article>')
     count=len(cards)
     return f'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Repository constellation</title><style>{CSS}</style><main class="wrap"><header><div><div class="eyebrow">New Darwin · public systems</div><h1>Repository constellation</h1><p>Source, build and deployment signals across the public fleet.</p></div><div class="stamp">Observed {esc(data.get('refreshed_at') or 'unknown')}</div></header><section class="stats"><div class="stat"><strong>{count}</strong><span>Public repositories</span></div><div class="stat"><strong>{sites}</strong><span>Pages sites</span></div><div class="stat"><strong>{passing}</strong><span>Passing latest CI</span></div><div class="stat"><strong>{healthy}</strong><span>HTTP 200 sites</span></div></section><div class="toolbar"><div><div class="eyebrow">Live inventory</div><p>Search the source map</p></div><input id="q" type="search" placeholder="Filter repositories" aria-label="Filter repositories"></div><section class="grid" id="grid">{''.join(cards)}</section><p class="empty" id="empty">No repositories match.</p><p class="note">CI, GitHub deployment state and HTTP reachability are separate observations. Unknown means unavailable, not healthy. A site returning HTTP 200 does not prove app functionality. Public repositories only.</p></main><script>const q=document.querySelector('#q'), cards=[...document.querySelectorAll('.card')],empty=document.querySelector('#empty');q.addEventListener('input',()=>{{let n=0;for(const card of cards){{const show=card.dataset.name.includes(q.value.toLowerCase());card.hidden=!show;if(show)n++}}empty.style.display=n?'none':'block'}});</script></html>'''
 

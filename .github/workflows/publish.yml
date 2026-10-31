@@ -25,6 +25,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
       - run: python -m unittest discover -s tests
       - run: mkdir -p site && python generate.py inventory.json site/index.html --audience public
+      - run: python export_catalog.py inventory.json site/catalog.json --audience public
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

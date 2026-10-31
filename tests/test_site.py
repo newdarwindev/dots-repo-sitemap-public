@@ -16,3 +16,11 @@ class SiteTest(unittest.TestCase):
         data={'repositories':[{'name':'old','visibility':'public','source_url':'https://example.org/a','latest_workflow':{'conclusion':'success'},'observed_at':'2020-01-01T00:00:00Z'}]}
         self.assertIn('stale / unknown',mod.build(data,'public',datetime(2026,10,31,tzinfo=timezone.utc)))
 if __name__=='__main__':unittest.main()
+
+class CatalogTest(unittest.TestCase):
+    def test_public_catalog_separation(self):
+        spec=importlib.util.spec_from_file_location('catalog',root/'export_catalog.py')
+        catalog=importlib.util.module_from_spec(spec);spec.loader.exec_module(catalog)
+        out=catalog.export({'repositories':[{'name':'owner/public','visibility':'public','source_url':'https://github.com/owner/public'},{'name':'owner/secret','visibility':'private','source_url':'https://github.com/owner/secret'}]},'public')
+        self.assertEqual(out['count'],1)
+        self.assertNotIn('secret',str(out))
